@@ -6,6 +6,10 @@
         {
             "label": "Build program",
             "type": "shell",
+            "presentation": {
+                "echo": false,
+                "clear": true
+            },
             "command": "node vscc/build.js c++ ${fileBasenameNoExtension} ${fileExtname} '${fileDirname}' 'C:\\Users\\rt\\Desktop\\CodeBlocks\\cb_console_runner.exe'",
             "group": {
                 "kind": "build",
