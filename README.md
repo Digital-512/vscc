@@ -3,6 +3,8 @@ C/C++ Build &amp; Run task runner for VS Code.
 
 Visual Studio Code does not have the "Build & Run" function, like Code::Blocks, to compile and execute C/C++ programs. This script uses GCC compiler and cb_console_runner from Code::Blocks to automatically compile and open compiled programs in console window.
 
+<b>IMPORTANT: </b> Uses NodeJS to run script. NodeJS must be installed on a computer.
+
 ### Installation
 > 1) Set compilerPath in C/C++ Configuration (c_cpp_properties.json).
 > 2) Download and copy "vscc" folder to workspace folder.
