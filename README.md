@@ -10,4 +10,15 @@ Visual Studio Code does not have the "Build & Run" function, like Code::Blocks, 
 > 4) Set consolePath. Leave empty if you want to open compiled programs in VS Code terminal.
 
 ### Build task command
-    $ node vscc/build.js c++ ${fileBasenameNoExtension} ${fileExtname} ${fileDirname} [consolePath]
+    $ node vscc/build.js [language] [fileBasenameNoExtension] [fileExtname] [fileDirname] [consolePath]
+    
+    // arguments - examples
+    // use double backslashes to escape backslash character
+    [language] - c/c++
+    [fileBasenameNoExtension] - application
+    [fileExtname] - .cpp
+    [fileDirname] - 'C:\\Users\\user111\\Documents\\MyWorkspace\\folder222'
+    [consolePath] - 'C:\\Program Files\\CodeBlocks\\cb_console_runner.exe'
+    
+    // example
+    $ node vscc/build.js c++ ${fileBasenameNoExtension} ${fileExtname} ${fileDirname} 'C:\\Program Files\\CodeBlocks\\cb_console_runner.exe'
