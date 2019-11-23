@@ -1,0 +1,16 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build program",
+            "type": "shell",
+            "command": "node vscc/build.js c++ ${fileBasenameNoExtension} ${fileExtname} '${fileDirname}' 'C:\\Users\\rt\\Desktop\\CodeBlocks\\cb_console_runner.exe'",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
